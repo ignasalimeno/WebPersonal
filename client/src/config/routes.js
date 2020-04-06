@@ -6,8 +6,10 @@ import AdminHome from "../pages/Admin";
 import AdminSignIn from "../pages/Admin/SignIn";
 
 //Pagos
-import Home from "../pages/Home.js";
-import Contact from "../pages/Contact.js";
+import Home from "../pages/Home";
+import Contact from "../pages/Contact";
+
+import Error404 from "../pages/Error404";
 
 const routes = [
   {
@@ -24,6 +26,9 @@ const routes = [
         path: "/admin/login",
         component: AdminSignIn,
         exact: true
+      },
+      {
+        component: Error404
       }
     ]
   },
@@ -41,6 +46,9 @@ const routes = [
         path: "/contact", 
         component: Contact, 
         exact: true 
+      },
+      {
+        component: Error404
       }
     ]
   }
