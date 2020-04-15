@@ -5,7 +5,7 @@ import { Layout } from "antd";
 import MenuTop from "../components/Admin/MenuTop";
 import MenuSider from "../components/Admin/MenuSider";
 
-import AdminSignIn from "../pages/Admin/SignIn";
+import AdminLogin from "../pages/Login";
 
 import "./LayoutAdmin.scss";
 
@@ -19,7 +19,7 @@ export default function LayoutAdmin(props) {
   if (!user) {
     return (
       <>
-        <Route path="/admin/login" component={AdminSignIn} />
+        <Route path="/admin/login" component={AdminLogin} />
         <Redirect to="/admin/login" />
       </>
     );

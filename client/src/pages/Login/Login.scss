@@ -1,0 +1,17 @@
+.login {
+    background-color: black;
+  
+    &__content {
+      background-color: grey;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      &_card {
+          
+          padding:  25px 25px 25px 25px;
+        background-color: lightblue;
+        position: center center;
+      }
+    }
+  }
