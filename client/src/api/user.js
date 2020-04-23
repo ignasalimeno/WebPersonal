@@ -15,8 +15,10 @@ export default async function LoginAPI(data) {
    const requester = new Request();
 
    // Respuesta
-   return await requester.post( url, data );   
-
+   let response = await requester.post( url, data );   
+  console.log(response);
+   return response;
+  
 }
 
 

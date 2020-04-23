@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Layout, Tabs, Card, Input, Tooltip, Button, Form } from "antd";
 import { InfoCircleOutlined, UserOutlined } from "@ant-design/icons";
 
+import {ACCESS_TOKEN, REFRESH_TOKEN} from '../../utils/constants';
+
 import "./Login.scss";
 
 import LoginFn from "./LoginFn";

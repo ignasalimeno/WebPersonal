@@ -64,7 +64,10 @@ export default class LoginFn extends Component {
       };
 
       const response = await LoginAPI(params);
-      console.log(response.status);
+      // const {accessToken} = response;
+      // console.log(accessToken);
+      
+      //console.log(response.message);
 
       if (response.status == 200) {
           alert("Bienvenido");

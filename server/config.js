@@ -1,7 +1,8 @@
 const API_VERSION = "v2";
 const IP_SERVER = "localhost";
 const USER_DB = "postgres";
-const PASS_DB = "atenas";
+//const PASS_DB = "atenas"; //PASS HP
+const PASS_DB = "Atenas1507"; //PASS Lenovo
 const NAME_DB = "webprueba";
 const PORT_DB= 5432;
 const SECRET_KEY = "fhshdfgAFA4mfgh45Dfsddfg45oip89789";

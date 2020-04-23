@@ -16,9 +16,16 @@ class Request {
       };
 
       // Realizamos la solicitud
-      let response = await fetch(endpoint, params);
+      // let response = await fetch(endpoint, params);
 
-      return response;
+      await fetch(endpoint, params).then((response) => {return response});
+      
+    //   fecth('http://miservidor.com/recurso')
+    // .then((response) => {
+    //     return response.json()
+    // })
+    //   return response;
+
     } catch (error) {
       // Rechazamos la solicitud.
       return error;
